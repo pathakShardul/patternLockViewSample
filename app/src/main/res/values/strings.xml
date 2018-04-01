@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Pattern Lock Verification Sample</string>
+    <string name="welcome_please_draw_a_pattern">Welcome! Please draw a pattern</string>
+    <string name="next">Next</string>
+    <string name="contact_photo">contact photo</string>
+    <string name="done">Done</string>
+    <string name="confirm_the_pattern">Confirm the pattern</string>
+</resources>

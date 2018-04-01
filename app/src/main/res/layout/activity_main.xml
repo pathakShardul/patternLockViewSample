@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.shardulpathak.mypatternlockverificationsample.InitialActivity">
+
+
+    <ImageView
+        android:id="@+id/contact_photo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignLeft="@+id/welcome_text"
+        android:layout_alignStart="@+id/welcome_text"
+        android:contentDescription="@string/contact_photo"
+        android:src="@drawable/contact_photo" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/welcome_please_draw_a_pattern"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <com.andrognito.patternlockview.PatternLockView
+        android:id="@+id/initial_pattern_lock_view"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_below="@id/welcome_text"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        app:aspectRatio="width_bias"
+        app:aspectRatioEnabled="true"
+        app:correctStateColor="@color/colorAccent"
+        app:dotAnimationDuration="200"
+        app:dotCount="3"
+        app:dotNormalSize="12dp"
+        app:dotSelectedSize="18dp"
+        app:normalStateColor="@color/white"
+        app:pathEndAnimationDuration="100"
+        app:pathWidth="4dp"
+        app:wrongStateColor="@color/pomegranate" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/initial_pattern_lock_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/next" />
+
+</RelativeLayout>
